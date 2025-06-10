@@ -1,17 +1,18 @@
 .container {
     max-width: 1200px;
-    box-sizing:  border-box;
+    box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .botao {
     display: inline-block;
     padding: 16px 32px;
     background: linear-gradient(#ffbf00, #f2a50c);
     border-radius: 4px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0, 0.1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     color: var(--cor-p5);
     font-size: 18px;
@@ -23,7 +24,7 @@
     background: linear-gradient(#ffb60d, #e59317);
 }
 
-.botao.secundario{
+.botao.secundario {
     background: var(--cor-10);
     color: var(--cor-2);
 }
@@ -57,4 +58,26 @@
 
 .link:hover {
     color: var(--cor-0);
+}
+
+.titulo-bg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--cor-11);
+}
+
+.titulo p {
+    margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+    .titulo-bg {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .titulo p {
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: 400;
+    }
 }
